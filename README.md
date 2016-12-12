@@ -5,3 +5,6 @@ jpholidayc
 
 ## Usage
 TODO
+
+## License
+MIT License
