@@ -1,0 +1,6 @@
+/.shards/
+/.crystal/
+/lib/
+shard.lock
+
+/bin

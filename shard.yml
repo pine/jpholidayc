@@ -1,0 +1,10 @@
+name: jpholidayc
+version: 0.1.0
+
+authors:
+  - Pine Mizune <pinemz@gmail.com>
+
+dependencies:
+  version-freezer:
+    github: pine/crystal-version-freezer
+    version: 0.1.1
