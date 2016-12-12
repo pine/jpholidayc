@@ -1,7 +1,7 @@
 jpholidayc
 ----------
 
-[jpholidayp](https://github.com/emasaka/jpholidayp) clone by Crystal language.
+[jpholidayp](https://github.com/emasaka/jpholidayp) clone implemented by Crystal language.
 
 ## Usage
 TODO
