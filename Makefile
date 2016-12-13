@@ -2,6 +2,14 @@ CRYSTAL := crystal
 OS      := $(shell uname -s | tr '[:upper:]' '[:lower:]')
 ARCH    := $(shell uname -m)
 
+ifeq ($(OS),linux)
+	CRFLAGS := --link-flags "-static -L$(shell crenv prefix)/embedded/lib"
+endif
+
+ifeq ($(OS),darwin)
+	CRFLAGS := --link-flags "-L."
+endif
+
 .PHONY: default install build test clean
 
 default: install build
