@@ -2,7 +2,7 @@ CRYSTAL := crystal
 OS      := $(shell uname -s | tr '[:upper:]' '[:lower:]')
 ARCH    := $(shell uname -m)
 
-.PHONY: default install clean build
+.PHONY: default install build test clean
 
 default: install build
 
