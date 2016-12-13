@@ -20,7 +20,7 @@ describe JpHoliday::Cache do
 
       begin
         cache = MockedCache.new("config")
-        cache.set({ "2016-12-13" => true })
+        cache.set({"2016-12-13" => true})
         cache.get.try(&.["2016-12-13"]?).should eq(true)
         cache.get.try(&.["2016-12-14"]?).should eq(nil)
       ensure

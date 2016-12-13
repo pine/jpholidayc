@@ -20,10 +20,8 @@ class JpHoliday::Cache
       else
         dat.val
       end
-
     rescue e : JSON::ParseException
       nil
-
     rescue e : Errno
       unless e.errno == Errno::ENOENT
         raise e
