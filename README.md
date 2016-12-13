@@ -23,5 +23,11 @@ $ make
 $ make release # for release build
 ```
 
+## Test
+
+```
+$ make test
+```
+
 ## License
 MIT License
