@@ -9,9 +9,7 @@ class JpHoliday::HolidayJp
 
   @holiday_jp : Hash(String, Bool)
 
-  def initialize
-    cache = Cache.new
-
+  def initialize(cache = Cache.new)
     if dat = cache.get
       @holiday_jp = dat
       return

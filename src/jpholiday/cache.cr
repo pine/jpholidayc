@@ -15,17 +15,19 @@ class JpHoliday::Cache
   def get : Hash(String, Bool)?
     begin
       dat = Container.from_json(File.read(@cache_path, encoding: "utf-8"))
-
       if dat.expires <= Time.now
         nil
       else
         dat.val
       end
+
+    rescue e : JSON::ParseException
+      nil
+
     rescue e : Errno
       unless e.errno == Errno::ENOENT
         raise e
       end
-
       nil
     end
   end

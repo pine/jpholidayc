@@ -13,6 +13,9 @@ build:
 	mkdir -p bin
 	$(CRYSTAL) build src/jpholiday.cr -o bin/jpholidayc
 
+test:
+	crystal spec -v
+
 clean:
 	rm -rf .crystal
 	rm -rf .shards
