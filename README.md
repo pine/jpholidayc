@@ -1,5 +1,4 @@
-jpholidayc
-----------
+# jpholidayc [![Build Status](https://travis-ci.org/pine/jpholidayc.svg?branch=master)](https://travis-ci.org/pine/jpholidayc)
 
 [jpholidayp](https://github.com/emasaka/jpholidayp) clone implemented by Crystal language.
 
