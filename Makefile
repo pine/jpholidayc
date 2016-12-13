@@ -16,7 +16,7 @@ build:
 release:
 	mkdir -p bin
 	$(CRYSTAL) build --release $(CRFLAGS) src/jpholiday.cr -o bin/jpholidayc
-	cd bin && tar cvfz notify-slack_$(shell bin/jpholidayc -v)_$(OS)_$(ARCH).tar.gz jpholidayc
+	cd bin && tar cvfz jpholidayc_$(shell bin/jpholidayc -v)_$(OS)_$(ARCH).tar.gz jpholidayc
 
 test:
 	crystal spec -v
