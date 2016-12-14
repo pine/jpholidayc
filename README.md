@@ -29,5 +29,8 @@ $ make release # for release build
 $ make test
 ```
 
+## Document
+- [jpholidayp を Crystal へ移植した話](http://qiita.com/pine613/items/d46b16b1300300a3d488) (Japanese)
+
 ## License
 MIT License
